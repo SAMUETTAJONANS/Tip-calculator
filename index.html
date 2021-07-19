@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <img id="logo" src="./images/logo.svg" alt="Spliter Logo">
+    <div id="container">
+        <div class="white-sec">            
+            <div class="form-group">
+            <label for="bill">Bill</label>
+            <div class="input">
+                <img src="./images/icon-dollar.svg" alt="dollar">
+                <input type="number" placeholder="0" id="bill">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Select  Tip %">Select  Tip %</label>
+            <div class="btns">
+                <button class="btn" id="5">5%</button>
+                <button class="btn" id="10">10%</button>
+                <button class="btn" id="15">15%</button>
+                <button class="btn" id="25">25%</button>
+                <button class="btn" id="50">50%</button>
+                <input id="custom" type="number" max="100" min=0 placeholder="Custom">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Number">Number of People</label>
+            <div class="input">
+                <img src="./images/icon-person.svg" alt="person">
+                <input type="number" placeholder="0" id="people">
+            </div>
+        </div></div>
+
+        <div class="green-sec">
+            <div class="row">
+                <div class="column">
+                    <h3>Tip Amount</h3>
+                    <p>/ person</p>
+                </div>
+                <div class="column">
+                    <h1 id="tip_amount">$0.00</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h3>Total</h3>
+                    <p>/ person</p>
+                </div>
+                <div class="column">
+                    <h1 id="total">$0.00</h1>
+                </div>
+            </div>
+
+            <button id="reset" disabled >RESET</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
