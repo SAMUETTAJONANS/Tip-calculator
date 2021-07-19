@@ -136,7 +136,7 @@ button,input{
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
     #container{
         margin: auto;
         width: 60%;
